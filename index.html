@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Listing Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+    .game-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .game-card {
+      background-color: white;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .game-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .game-content {
+      padding: 15px;
+    }
+    .game-content h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+    .game-content p {
+      font-size: 14px;
+      color: #555;
+    }
+    .game-content button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .game-content button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Game Listing Website</h1>
+    <p>Play fun games directly in your browser</p>
+  </header>
+
+  <div class="game-list">
+    <!-- Game 1: Tic Tac Toe -->
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/1024px-Tic_tac_toe.svg.png" alt="Tic Tac Toe">
+      <div class="game-content">
+        <h2>Tic Tac Toe</h2>
+        <p>A simple and fun game for 2 players. Try to make a row before your opponent does!</p>
+        <button onclick="window.location.href='tictactoe.html'">Play Now</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
